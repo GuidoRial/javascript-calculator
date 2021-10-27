@@ -26,7 +26,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 10px;
-    background-color: gray;
+    background-color: black;
     color: white;
     font-size: 30px;
 }
@@ -45,10 +45,11 @@ button {
     font-size: 26px;
     transition-duration: 0.4s;
     cursor: pointer;
+    outline: none;
 }
 
 button:hover {
-    background-color: gray;
+    background-color: #FF6700;
     color: white;
 }
 
@@ -64,14 +65,21 @@ button:hover {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    flex-direction: column;
     background-color: #EFEFEF;
     width: 400px;
     height: 75px;
     border-radius: 5px;
-    padding: 7px;
+    padding: 10px;
     margin-bottom: 5px;
     font-size: 26px;
 }
+
+.current-operand {
+    font-size: 45px;
+    font-weight: 700;
+}
+
 
 .button-container {
     width: 512px;
