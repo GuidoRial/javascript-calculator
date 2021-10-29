@@ -51,6 +51,10 @@ class Calculator {
             case "X":
                 computation = prev * current;
                 break;
+            case "*":
+                computation = prev * current;
+                break;
+
             default:
                 return;
         }
