@@ -20,5 +20,5 @@ https://guidorial.github.io/javascript-calculator/
       -  It was my first project working with object, so I understand them better now
       -  How to create a class
       -  How to use isNaN()
-      -  
+      -  How to add key support
 

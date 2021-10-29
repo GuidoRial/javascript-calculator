@@ -138,3 +138,34 @@ deleteButton.addEventListener("click", button => {
     calculator.delete();
     calculator.updateDisplay();
 })
+
+window.onkeydown = function(e) {
+    if (e.key >=0 && e.key <= 9) {
+        calculator.appendNumber(e.key)
+        calculator.updateDisplay();
+    }
+    if (e.key === ".") {
+        calculator.appendNumber(e.key)
+        calculator.updateDisplay();
+    }
+
+    if (e.key === "+" || e.key === "-" || e.key === "/" || e.key === "*") {
+        calculator.chooseOperation(e.key);
+        calculator.updateDisplay();
+    } 
+
+    if (e.key === "Enter") {
+        calculator.compute();
+        calculator.updateDisplay();
+
+    }
+    if (e.key === "Backspace") {
+        calculator.delete();
+        calculator.updateDisplay();
+    }
+    if (e.key === "Escape") {
+        calculator.clear();
+        calculator.updateDisplay();
+    }
+}
+
