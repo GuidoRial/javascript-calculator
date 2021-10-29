@@ -87,8 +87,6 @@ class Calculator {
             this.previousOperandTextElement.innerText = ""
         }
     }
-
-
 }
 
 document.getElementById("githubLogo").onclick = function () {
@@ -168,4 +166,3 @@ window.onkeydown = function(e) {
         calculator.updateDisplay();
     }
 }
-
